@@ -1,0 +1,45 @@
+.card {
+    position: relative;
+    background: white;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#person {
+    padding-top: 50px;
+}
+
+#me-picture {
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    width: 120px;
+    height: 120px;
+    top: -55px;
+    left: calc(50% - 50px);
+    border: 5px solid white;
+}
+
+#logo-picture {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    left: calc(50% + 30px);
+    border: 2px solid white;
+}
+
+#me-fullname {
+    margin-bottom:0;
+}
+#me-job {
+    margin-top:0;
+    font-weight: 500;
+    color: rgba(0,0,0,0.3);
+}
