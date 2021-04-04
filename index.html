@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Laurence Turcotti">
     <title>Développeur web - Laurence Turcotti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/style.css"/>
     <link rel="stylesheet" href="./src/card.css"/>
     <link rel="stylesheet" href="./src/thumbnail.css"/>
+    <link rel="stylesheet" href="src/path.css"/>
+    <link rel="stylesheet" href="src/list.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
 </head>
 <body>
     <div class="page">
         <div class="card" id="person">
             <img id="me-picture" src="./image/moi.jpg">
-            <img id="logo-picture" src="./image/Background.svg">
+            <img id="logo-picture" src="./image/favicon-32x32.png">
             <section>
                 <h1 id="me-fullname">Laurence Turcotti</h1>
-                <h2 id="me-job">Développeur web</h2>
-                <p>Bonjour, je suis <strong>Laurence</strong>,<strong>développeuse Web</strong> actuellement <strong>en formation à l'AFPA</strong>, je suis à la recherche d'un emploi dans <strong>l'air Toulonnaise</strong>.</p>
+                <h2 id="me-job">Développeuse web</h2>
+                <p>Bonjour, je suis <strong>Laurence</strong>,<strong>développeuse Web</strong> actuellement <strong>en formation à l'AFPA</strong>, je suis à la recherche d'un emploi dans <strong>l'aire Toulonnaise</strong>.</p>
                 <div>
                     <a class="button" target="_blank" href="mailto:laurence.turcotti@gmail.fr">M'envoyer un mail</a>
                     <span class="or"> ou </span>
@@ -27,13 +33,36 @@
             </section>
             <section>
                 <h3>Compétences</h3>
+                <div class="list"> 
+                        <ul class="list-theme">
+                            <p class="list-title">Langages</p>
+                           <li><i class="fab fa-html5" style="color:red"></i> HTML5</li>
+                           <li><i class="fab fa-css3-alt" style="color: blue"></i> CSS3</li>
+                           <li><i class="fab fa-js-square" style="color: #efd81d"></i> Javascript</li>
+                           <li><i class="fab fa-php" style="color: #7377ad"></i> PHP</li>
+                           <li><i class="fas fa-database" style="color: blue"></i> MySQL</li>
+                        </ul>
+                         <ul class="list-theme">
+                            <p class="list-title">Framework/CMS</p>
+                            <li><i class="fab fa-bootstrap" style="color:purple"></i> Bootstrap</li>
+                            <li><i class="fab fa-angular" style="color:red"></i> Angular</li>
+                            <li><i class="fab fa-symfony"></i> Symfony</li>
+                            <li><i class="fab fa-wordpress" style="color: blue"></i> WP</li>
+                         </ul> 
+                         <ul class="list-theme">
+                            <p class="list-title">Autres</p>
+                            <li><i class="fab fa-git-alt" style="color: #e84e31"></i> GIT</li>
+                            <li><i class="fab fa-trello" style="color: blue"></i> SCRUM</li>
+                            <li><i class="fab fa-figma"></i> Figma</li>
+                         </ul>
+                </div>
                 <hr/>   
             </section>
             <section>
                 <h3>Réalisations</h3>
                 <div class= mission>
                     <div class="thumbnail" >
-                        <div class="thumbnail-cover" style="background-image: url(./image/LogoTexteRight.png)"></div>
+                        <div class="thumbnail-cover" style="background-image: url(./image/logoLibrairie.png)"></div>
                         <div class="thumbnail-content">
                             <span class="badge">click & collect</span>
                             <p class="thumbnail-title">Edward Comic</p>
@@ -46,11 +75,11 @@
                     <div class="info">
                         <div class="resume">
                             <div class="title-info">Résumé</div>
-                            <div class="text-info">Dans le cadre de la formation AFPA, création en équipe d'un site de click & collect pour une librairie ici de comics</div>
+                            <div class="text-info">Création pour une librairie d'un site de vente de comics en click & collect. (projet en équipe pendant formation AFPA)</div>
                         </div>
                         <div class="resume">
                             <div class="title-info">Langages utilisés</div>
-                            <div class="text-info">Angular, Bootstrap, PHP, MySQL></div>
+                            <div class="text-info">Angular, Bootstrap, PHP, MySQL</div>
                         </div>
                     </div>
                 </div>
@@ -58,7 +87,7 @@
                     <div class="info">
                         <div class="resume">
                             <div class="title-info">Résumé</div>
-                            <div class="text-info">Création d'un site vitine d'un cabinet d'infirmier</div>
+                            <div class="text-info">Création d'un site vitrine pour un cabinet d'infirmier</div>
                         </div>
                         <div class="resume">
                             <div class="title-info">Langages utilisés</div>
@@ -66,17 +95,38 @@
                         </div>
                     </div>
                     <div class="thumbnail" >
-                        <div class="thumbnail-cover" style="background-image: url(./image/IMG_3838.jpg)"></div>
+                        <div class="thumbnail-cover" style="background-image: url(./image/infirmerie.jpg)"></div>
                         <div class="thumbnail-content">
                             <span class="badge">site vitine</span>
                             <p class="thumbnail-title">Infirmerie centrale</p>
                             <p class="thumbnail-description">Création d'un site vitine</p>
                             <div class="thumbnail-footer">
-                                <a href="google.fr" target="_blank">Voir le site</a>
+                                <a href="google.fr" target="_blank">Lien à venir</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr/>
+            </section>
+            <section>
+                <h3>Parcours</h3>
+                <div class="path">
+                    <div class="step">
+                        <p class="step-title">AFPA - Novembre 2020 à Août 2021</p>
+                        <p>Dîplome en cours d'obtention d'un titre professionnel de Développeur Web et Web Mobile (bac +2)</p>
+                    </div>
+                    <div class="step">
+                        <p class="step-title">Infirmière militaire - 1996-2020</p>
+                        <p>Infirmière militaire dans la Marine Nationale puis dans le Service de Santé des Armées</p>
+                    </div>
+                </div>
+                <hr/>
+            </section>
+            <section>
+               <ul class="list-links">
+                   <li><a target="_blank" href="https://www.linkedin.com/in/laurence-turcotti/"><img alt="Linkedin" src="image/linkedin.svg"></a></li>
+                   <li><a target="_blank" href="https://github.com/L-TCT"><img alt="Github" src="image/github.svg"></a></li>
+               </ul> 
             </section>
         </div>
     </div>
